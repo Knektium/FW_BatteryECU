@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ResourceModel:Peripheral xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ResourceModel="http://www.infineon.com/Davex/Resource.ecore" URI="http://resources/14.0.0/peripheral/shs/0" description="Sample and Hold ADC Sequencer" baseAddress="0x48034000">
+  <provided xsi:type="ResourceModel:ResourceGroup" name="SH_UNIT_0" URI="http://resources/14.0.0/peripheral/shs/0/shs_unit/0">
+    <resourcesList name="timcfg" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/timcfg0"/>
+    <resourcesList name="calgc" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/calgc0"/>
+    <resourcesList name="shs_sel" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/shs_sel0"/>
+    <resourcesList name="shs_global" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/su_shs_global0"/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="GLOBAL" URI="http://resources/14.0.0/peripheral/shs/0/global">
+    <resourcesList name="shscfg" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/shscfg"/>
+    <resourcesList name="stepcfg" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/stepcfg"/>
+    <resourcesList name="calctr" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/calctr"/>
+    <resourcesList name="vadc_global" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/g_vadc_global"/>
+    <resourcesList name="shs_global" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/g_shs_global"/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="SH_UNIT_1" URI="http://resources/14.0.0/peripheral/shs/0/shs_unit/1">
+    <resourcesList name="timcfg" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/timcfg1"/>
+    <resourcesList name="calgc" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/calgc1"/>
+    <resourcesList name="shs_sel" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/shs_sel1"/>
+    <resourcesList name="shs_global" requiredResourceUri="http://resources/1.0.0/peripheral/shs/0/su_shs_global1"/>
+  </provided>
+  <addressBlock offset="0x0" size="0x0200" usage="registers"/>
+</ResourceModel:Peripheral>
