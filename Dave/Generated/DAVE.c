@@ -102,6 +102,21 @@ DAVE_STATUS_t DAVE_Init(void)
   {
 	 /**  Initialization of DIGITAL_IO APP instance DIGITAL_IO_AuxPowerOn */
 	 init_status = (DAVE_STATUS_t)DIGITAL_IO_Init(&DIGITAL_IO_AuxPowerOn); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of INTERRUPT APP instance INTERRUPT_CAN_NODE_0_Receive */
+	 init_status = (DAVE_STATUS_t)INTERRUPT_Init(&INTERRUPT_CAN_NODE_0_Receive); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of INTERRUPT APP instance INTERRUPT_CAN_NODE_0_Transmit */
+	 init_status = (DAVE_STATUS_t)INTERRUPT_Init(&INTERRUPT_CAN_NODE_0_Transmit); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of INTERRUPT APP instance INTERRUPT_CAN_NODE_0_Error */
+	 init_status = (DAVE_STATUS_t)INTERRUPT_Init(&INTERRUPT_CAN_NODE_0_Error); 
    }  
   return init_status;
 } /**  End of function DAVE_Init */

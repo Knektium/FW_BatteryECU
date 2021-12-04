@@ -5,14 +5,14 @@
   <virtualSignals name="transmit_pin" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_txd" hwSignal="txd" hwResource="//@hwResources.2"/>
   <virtualSignals name="receive_pad" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_rxpin" hwSignal="pad" hwResource="//@hwResources.0"/>
   <virtualSignals name="transmit_pad" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_txpin" hwSignal="pad" hwResource="//@hwResources.1"/>
-  <virtualSignals name="event_node_alert" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_alinp" hwSignal="alinp" hwResource="//@hwResources.2" required="false" visible="true"/>
+  <virtualSignals name="event_node_alert" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_alinp" hwSignal="alinp" hwResource="//@hwResources.2" visible="true"/>
   <virtualSignals name="event_node_lec_error" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_lecinp" hwSignal="lecinp" hwResource="//@hwResources.2" required="false" visible="true"/>
   <virtualSignals name="event_node_transfer_ok" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_trinp" hwSignal="trinp" hwResource="//@hwResources.2" required="false" visible="true"/>
   <virtualSignals name="event_node_frame_count" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_can_cfcinp" hwSignal="cfcinp" hwResource="//@hwResources.2" required="false" visible="true"/>
-  <virtualSignals name="event_lmo_01_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message1_txinp" hwSignal="txinp" hwResource="//@hwResources.3" visible="true"/>
-  <virtualSignals name="event_lmo_01_rxinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message1_rxinp" hwSignal="rxinp" hwResource="//@hwResources.3" required="false" visible="true"/>
-  <virtualSignals name="event_lmo_02_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message2_txinp" hwSignal="txinp" hwResource="//@hwResources.4" required="false" visible="true"/>
-  <virtualSignals name="event_lmo_02_rxinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message2_rxinp" hwSignal="rxinp" hwResource="//@hwResources.4" visible="true"/>
+  <virtualSignals name="event_lmo_01_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message1_txinp" hwSignal="txinp" hwResource="//@hwResources.3" required="false" visible="true"/>
+  <virtualSignals name="event_lmo_01_rxinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message1_rxinp" hwSignal="rxinp" hwResource="//@hwResources.3" visible="true"/>
+  <virtualSignals name="event_lmo_02_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message2_txinp" hwSignal="txinp" hwResource="//@hwResources.4" visible="true"/>
+  <virtualSignals name="event_lmo_02_rxinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message2_rxinp" hwSignal="rxinp" hwResource="//@hwResources.4" required="false" visible="true"/>
   <virtualSignals name="event_lmo_03_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message3_txinp" hwSignal="txinp" hwResource="//@hwResources.5" required="false" visible="true"/>
   <virtualSignals name="event_lmo_03_rxinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message3_rxinp" hwSignal="rxinp" hwResource="//@hwResources.5" required="false" visible="true"/>
   <virtualSignals name="event_lmo_04_txinp" URI="http://resources/4.1.16/app/CAN_NODE/0/vs_message4_txinp" hwSignal="txinp" hwResource="//@hwResources.6" required="false" visible="true"/>
@@ -135,4 +135,16 @@
   <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/__pin_vs_can_rxpin/http://resources/4.1.16/app/CAN_NODE/0/vs_can_rxpin" systemDefined="true" sourceSignal="CAN Receive Pin_signal" targetSignal="receive_pad" srcVirtualSignal="//@virtualSignals.72" targetVirtualSignal="//@virtualSignals.2"/>
   <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/vs_can_txpin/http://resources/4.1.16/app/CAN_NODE/0/__pin_vs_can_txpin" systemDefined="true" sourceSignal="transmit_pad" targetSignal="CAN Transmit Pin_signal" srcVirtualSignal="//@virtualSignals.3" targetVirtualSignal="//@virtualSignals.73"/>
   <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/__pin_vs_can_txpin/http://resources/4.1.16/app/CAN_NODE/0/vs_can_txpin" systemDefined="true" sourceSignal="CAN Transmit Pin_signal" targetSignal="transmit_pad" srcVirtualSignal="//@virtualSignals.73" targetVirtualSignal="//@virtualSignals.3"/>
+  <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/vs_message1_rxinp/http://resources/4.0.8/app/INTERRUPT/0/vs_nvic_signal_in" sourceSignal="event_lmo_01_rxinp" targetSignal="sr_irq" srcVirtualSignal="//@virtualSignals.9">
+    <downwardMapList xsi:type="ResourceModel:VirtualSignal" href="../../INTERRUPT/v4_0_8/INTERRUPT_0.app#//@virtualSignals.0"/>
+    <targetVirtualSignal href="../../INTERRUPT/v4_0_8/INTERRUPT_0.app#//@virtualSignals.0"/>
+  </connections>
+  <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/vs_message2_txinp/http://resources/4.0.8/app/INTERRUPT/1/vs_nvic_signal_in" sourceSignal="event_lmo_02_txinp" targetSignal="sr_irq" srcVirtualSignal="//@virtualSignals.10">
+    <downwardMapList xsi:type="ResourceModel:VirtualSignal" href="../../INTERRUPT/v4_0_8/INTERRUPT_1.app#//@virtualSignals.0"/>
+    <targetVirtualSignal href="../../INTERRUPT/v4_0_8/INTERRUPT_1.app#//@virtualSignals.0"/>
+  </connections>
+  <connections URI="http://resources/4.1.16/app/CAN_NODE/0/http://resources/4.1.16/app/CAN_NODE/0/vs_can_alinp/http://resources/4.0.8/app/INTERRUPT/2/vs_nvic_signal_in" sourceSignal="event_node_alert" targetSignal="sr_irq" srcVirtualSignal="//@virtualSignals.4">
+    <downwardMapList xsi:type="ResourceModel:VirtualSignal" href="../../INTERRUPT/v4_0_8/INTERRUPT_2.app#//@virtualSignals.0"/>
+    <targetVirtualSignal href="../../INTERRUPT/v4_0_8/INTERRUPT_2.app#//@virtualSignals.0"/>
+  </connections>
 </ResourceModel:App>

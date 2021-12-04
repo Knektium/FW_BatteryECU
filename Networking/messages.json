@@ -5,8 +5,8 @@
         "priority": "0xA",
         "signals":  [
             {
-                "name": "On",
-                "size": "0x01",
+                "name": "Off",
+                "size": "0x08",
                 "offset": "0x0"
             }
         ]
@@ -19,7 +19,26 @@
             {
                 "name": "Current",
                 "size": "0x10",
-                "offset": "0x0"
+                "offset": "0x0",
+		"displayType": "Dec"
+            },
+            {
+                "name": "BatteryOneVoltage",
+                "size": "0x10",
+                "offset": "0x10",
+		"displayType": "Dec"
+            },
+            {
+                "name": "BatteryTwoVoltage",
+                "size": "0x10",
+                "offset": "0x20",
+		"displayType": "Dec"
+            },
+            {
+                "name": "BatteryThreeVoltage",
+                "size": "0x10",
+                "offset": "0x30",
+		"displayType": "Dec"
             }
         ]
     }

@@ -52,6 +52,7 @@ INCLUDE_PATHS := \
 
 DAVE_MODULES := \
 	. \
+	INTERRUPT \
 	ADC_MEASUREMENT \
 	CLOCK_XMC1 \
 	CPU_CTRL_XMC1 \
@@ -71,12 +72,12 @@ LIB_MODULES := \
 
 MEDDELA_SOURCE_FILES := \
 	CAN_Config_XMC1400.c \
-	Can_Router.c
+	Tasks/MessageManager.c
 
 MEDDELA_HEADER_FILES := \
 	CAN_Config_XMC1400.h \
 	CAN_Config.h \
-	Can_Router.h
+	Tasks/MessageManager.h
 
 .PHONY: all clean cleanall
 

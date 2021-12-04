@@ -209,7 +209,7 @@ const CAN_NODE_SR_t CAN_NODE_0_sr = {
 
 XMC_CAN_MO_t  CAN_NODE_0_LMO_01 = {  
 
-  .can_mo_type      =  XMC_CAN_MO_TYPE_TRANSMSGOBJ,
+  .can_mo_type      =  XMC_CAN_MO_TYPE_RECMSGOBJ,
 
   .can_id_mode      = XMC_CAN_FRAME_TYPE_EXTENDED_29BITS,
 
@@ -241,11 +241,11 @@ const CAN_NODE_LMO_t CAN_NODE_0_LMO_01_Config = {
 
   .tx_sr   = 0U,
 
-  .rx_sr   = 0U,
+  .rx_sr   = 2U,
 
-  .tx_event_enable = true,
+  .tx_event_enable = false,
 
-  .rx_event_enable = false
+  .rx_event_enable = true
 
 };
 
@@ -253,7 +253,7 @@ const CAN_NODE_LMO_t CAN_NODE_0_LMO_01_Config = {
 
 XMC_CAN_MO_t  CAN_NODE_0_LMO_02 = {  
 
-  .can_mo_type      =  XMC_CAN_MO_TYPE_RECMSGOBJ,
+  .can_mo_type      =  XMC_CAN_MO_TYPE_TRANSMSGOBJ,
 
   .can_id_mode      = XMC_CAN_FRAME_TYPE_EXTENDED_29BITS,
 
@@ -283,13 +283,13 @@ const CAN_NODE_LMO_t CAN_NODE_0_LMO_02_Config = {
 
   .number  = 19U,   
 
-  .tx_sr   = 0U,
+  .tx_sr   = 1U,
 
   .rx_sr   = 0U,
 
-  .tx_event_enable = false,
+  .tx_event_enable = true,
 
-  .rx_event_enable = true
+  .rx_event_enable = false
 
 };
 
@@ -327,7 +327,7 @@ const CAN_NODE_t  CAN_NODE_0 = {
 
   .loopback_enable         = false, 
 
-  .alert_event_enable      = false,
+  .alert_event_enable      = true,
 
   .lec_event_enable        = false, 
 
