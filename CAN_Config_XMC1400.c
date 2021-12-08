@@ -4,6 +4,7 @@
  */
 #include <DAVE.h>
 #include "Tasks/MessageManager.h"
+#include "interrupt_mapping.h"
 
 
 XMC_CAN_MO_t CAN_NODE_Battery_LMO_BatteryControl = {
@@ -24,8 +25,8 @@ const CAN_NODE_LMO_t CAN_NODE_Battery_LMO_BatteryControl_Config = {
 	.number  = 1U,
 	.tx_event_enable = false,
 	.rx_event_enable = true,
-	.tx_sr   = 2U,
-	.rx_sr   = 1U
+	.tx_sr   = INTERRUPT_CAN_NODE_0_TRANSMIT,
+	.rx_sr   = INTERRUPT_CAN_NODE_0_RECEIVE
 };
 
 XMC_CAN_MO_t CAN_NODE_Battery_LMO_BatteryStatus = {
@@ -46,8 +47,8 @@ const CAN_NODE_LMO_t CAN_NODE_Battery_LMO_BatteryStatus_Config = {
 	.number  = 2U,
 	.tx_event_enable = true,
 	.rx_event_enable = false,
-	.tx_sr   = 2U,
-	.rx_sr   = 1U
+	.tx_sr   = INTERRUPT_CAN_NODE_0_TRANSMIT,
+	.rx_sr   = INTERRUPT_CAN_NODE_0_RECEIVE
 };
 
 
