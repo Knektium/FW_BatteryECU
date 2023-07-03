@@ -67,13 +67,15 @@
 
 extern const DIGITAL_IO_t DIGITAL_IO_PowerOn; 
 	
-extern const DIGITAL_IO_t DIGITAL_IO_StatusLED; 
-	
 extern const DIGITAL_IO_t DIGITAL_IO_CanStandby; 
 	
 extern const DIGITAL_IO_t DIGITAL_IO_BusPowerOn; 
 	
 extern const DIGITAL_IO_t DIGITAL_IO_AuxPowerOn; 
+	
+extern const DIGITAL_IO_t DIGITAL_IO_Button; 
+	
+extern const DIGITAL_IO_t DIGITAL_IO_ChargerPower; 
 	
  
 #endif  /* DIGITAL_IO_EXTERN_H */

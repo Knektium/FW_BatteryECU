@@ -24,14 +24,14 @@ void MessageManager_Send_BatteryStatus(BatteryStatus_t *s, uint32_t to_node)
 	data[0U] |= ((uint8_t) (s->Current >> 0U) << 0U) & 255U;
 	data[1U] |= ((uint8_t) (s->Current >> 8U) << 0U) & 255U;
 	
-	data[2U] |= ((uint8_t) (s->BatteryOneVoltage >> 0U) << 0U) & 255U;
-	data[3U] |= ((uint8_t) (s->BatteryOneVoltage >> 8U) << 0U) & 255U;
+	data[2U] |= ((uint8_t) (s->BatteryVoltage >> 0U) << 0U) & 255U;
+	data[3U] |= ((uint8_t) (s->BatteryVoltage >> 8U) << 0U) & 255U;
 	
-	data[4U] |= ((uint8_t) (s->BatteryTwoVoltage >> 0U) << 0U) & 255U;
-	data[5U] |= ((uint8_t) (s->BatteryTwoVoltage >> 8U) << 0U) & 255U;
+	data[4U] |= ((uint8_t) (s->TemperatureOne >> 0U) << 0U) & 255U;
+	data[5U] |= ((uint8_t) (s->TemperatureOne >> 8U) << 0U) & 255U;
 	
-	data[6U] |= ((uint8_t) (s->BatteryThreeVoltage >> 0U) << 0U) & 255U;
-	data[7U] |= ((uint8_t) (s->BatteryThreeVoltage >> 8U) << 0U) & 255U;
+	data[6U] |= ((uint8_t) (s->TemperatureTwo >> 0U) << 0U) & 255U;
+	data[7U] |= ((uint8_t) (s->TemperatureTwo >> 8U) << 0U) & 255U;
 	
 	CAN_NODE_0_SendMessage(CAN_MESSAGE_BATTERYSTATUS_INDEX, (uint8_t *) data);
 }

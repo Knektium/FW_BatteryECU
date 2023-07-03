@@ -101,9 +101,7 @@
  * MACROS
  **********************************************************************************************************************/
 
- extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage1_handle;
- extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage2_handle;
- extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage3_handle;
+ extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage_handle;
  extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Current_handle;
  extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Temperature1_handle;
  extern ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Temperature2_handle;

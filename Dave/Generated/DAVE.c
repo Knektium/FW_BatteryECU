@@ -75,11 +75,6 @@ DAVE_STATUS_t DAVE_Init(void)
    } 
   if (init_status == DAVE_STATUS_SUCCESS)
   {
-	 /**  Initialization of DIGITAL_IO APP instance DIGITAL_IO_StatusLED */
-	 init_status = (DAVE_STATUS_t)DIGITAL_IO_Init(&DIGITAL_IO_StatusLED); 
-   } 
-  if (init_status == DAVE_STATUS_SUCCESS)
-  {
 	 /**  Initialization of ADC_MEASUREMENT APP instance ADC_MEASUREMENT_Voltage */
 	 init_status = (DAVE_STATUS_t)ADC_MEASUREMENT_Init(&ADC_MEASUREMENT_Voltage); 
    } 
@@ -117,6 +112,36 @@ DAVE_STATUS_t DAVE_Init(void)
   {
 	 /**  Initialization of INTERRUPT APP instance INTERRUPT_CAN_NODE_0_Error */
 	 init_status = (DAVE_STATUS_t)INTERRUPT_Init(&INTERRUPT_CAN_NODE_0_Error); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of BUS_IO APP instance BUS_IO_ChargerControl */
+	 init_status = (DAVE_STATUS_t)BUS_IO_Init(&BUS_IO_ChargerControl); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of PWM APP instance PWM_StatusRed */
+	 init_status = (DAVE_STATUS_t)PWM_Init(&PWM_StatusRed); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of PWM APP instance PWM_StatusGreen */
+	 init_status = (DAVE_STATUS_t)PWM_Init(&PWM_StatusGreen); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of PWM APP instance PWM_StatusBlue */
+	 init_status = (DAVE_STATUS_t)PWM_Init(&PWM_StatusBlue); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of DIGITAL_IO APP instance DIGITAL_IO_Button */
+	 init_status = (DAVE_STATUS_t)DIGITAL_IO_Init(&DIGITAL_IO_Button); 
+   } 
+  if (init_status == DAVE_STATUS_SUCCESS)
+  {
+	 /**  Initialization of DIGITAL_IO APP instance DIGITAL_IO_ChargerPower */
+	 init_status = (DAVE_STATUS_t)DIGITAL_IO_Init(&DIGITAL_IO_ChargerPower); 
    }  
   return init_status;
 } /**  End of function DAVE_Init */

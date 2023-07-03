@@ -100,24 +100,18 @@
  **********************************************************************************************************************/
 
 
-#define ADC_MEASUREMENT_MAXCHANNELS (6U)
-#define ADC_MEASUREMENT_Channel_Voltage1 (ADC_MEASUREMENT_Channel_Voltage1_handle)
-#define ADC_MEASUREMENT_Channel_Voltage1_RES (VADC_G1->RES[12])
-
-#define ADC_MEASUREMENT_Channel_Voltage2 (ADC_MEASUREMENT_Channel_Voltage2_handle)
-#define ADC_MEASUREMENT_Channel_Voltage2_RES (VADC_G1->RES[4])
-
-#define ADC_MEASUREMENT_Channel_Voltage3 (ADC_MEASUREMENT_Channel_Voltage3_handle)
-#define ADC_MEASUREMENT_Channel_Voltage3_RES (VADC_G1->RES[11])
+#define ADC_MEASUREMENT_MAXCHANNELS (4U)
+#define ADC_MEASUREMENT_Channel_Voltage (ADC_MEASUREMENT_Channel_Voltage_handle)
+#define ADC_MEASUREMENT_Channel_Voltage_RES (VADC_G1->RES[11])
 
 #define ADC_MEASUREMENT_Channel_Current (ADC_MEASUREMENT_Channel_Current_handle)
-#define ADC_MEASUREMENT_Channel_Current_RES (VADC_G1->RES[10])
+#define ADC_MEASUREMENT_Channel_Current_RES (VADC_G0->RES[7])
 
 #define ADC_MEASUREMENT_Channel_Temperature1 (ADC_MEASUREMENT_Channel_Temperature1_handle)
-#define ADC_MEASUREMENT_Channel_Temperature1_RES (VADC_G0->RES[7])
+#define ADC_MEASUREMENT_Channel_Temperature1_RES (VADC_G0->RES[9])
 
 #define ADC_MEASUREMENT_Channel_Temperature2 (ADC_MEASUREMENT_Channel_Temperature2_handle)
-#define ADC_MEASUREMENT_Channel_Temperature2_RES (VADC_G0->RES[9])
+#define ADC_MEASUREMENT_Channel_Temperature2_RES (VADC_G1->RES[10])
 
 #define ADC_MEASUREMENT_ICLASS_NUM (0U)
 #define ADC_MEASUREMENT_MAJOR_VERSION (4U) /**< Major version number of ADC_MEASUREMENT APP*/

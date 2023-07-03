@@ -30,9 +30,6 @@
   <nodes xsi:type="ApplicationModel:PeripheralNode">
     <resource xsi:type="ResourceModel:Peripheral" href="HW_RESOURCES/port4/port4_4.dd#/"/>
   </nodes>
-  <nodes xsi:type="ApplicationModel:AppNode">
-    <resource xsi:type="ResourceModel:App" href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_1.app#/"/>
-  </nodes>
   <nodes xsi:type="ApplicationModel:PeripheralNode">
     <resource xsi:type="ResourceModel:Peripheral" href="HW_RESOURCES/vadc/vadc_0.dd#/"/>
   </nodes>
@@ -78,20 +75,49 @@
   <nodes xsi:type="ApplicationModel:AppNode">
     <resource xsi:type="ResourceModel:App" href="APPS/INTERRUPT/v4_0_8/INTERRUPT_2.app#/"/>
   </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/GLOBAL_CCU4/v4_1_12/GLOBAL_CCU4_0.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/PWM/v4_1_10/PWM_0.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:PeripheralNode">
+    <resource xsi:type="ResourceModel:Peripheral" href="HW_RESOURCES/ccu40/ccu40_0.dd#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/PWM/v4_1_10/PWM_1.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/PWM/v4_1_10/PWM_2.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:PeripheralNode">
+    <resource xsi:type="ResourceModel:Peripheral" href="HW_RESOURCES/ccu41/ccu41_1.dd#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_5.app#/"/>
+  </nodes>
+  <nodes xsi:type="ApplicationModel:AppNode">
+    <resource xsi:type="ResourceModel:App" href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_6.app#/"/>
+  </nodes>
   <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.2" target="//@nodes.1"/>
   <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.2" target="//@nodes.0"/>
-  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.14" target="//@nodes.1"/>
-  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.15" target="//@nodes.14"/>
-  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.16" target="//@nodes.1"/>
-  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.17" target="//@nodes.16"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.13" target="//@nodes.1"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.14" target="//@nodes.13"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.15" target="//@nodes.1"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.16" target="//@nodes.15"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.22" target="//@nodes.0"/>
   <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.23" target="//@nodes.0"/>
   <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.24" target="//@nodes.0"/>
-  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.25" target="//@nodes.0"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.26" target="//@nodes.1"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.27" target="//@nodes.26"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.29" target="//@nodes.26"/>
+  <connections xsi:type="ApplicationModel:NodeConnection" source="//@nodes.30" target="//@nodes.26"/>
   <hwConnections href="APPS/CLOCK_XMC1/v4_0_20/CLOCK_XMC1_0.app#//@connections.1"/>
   <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_0.app#//@connections.0"/>
   <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_0.app#//@connections.1"/>
-  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_1.app#//@connections.0"/>
-  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_1.app#//@connections.1"/>
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.0"/>
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.1"/>
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.2"/>
@@ -161,10 +187,6 @@
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.109"/>
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.57"/>
   <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.56"/>
-  <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.58"/>
-  <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.110"/>
-  <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.111"/>
-  <hwConnections href="APPS/ADC_MEASUREMENT/v4_1_22/ADC_MEASUREMENT_0.app#//@connections.59"/>
   <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_3.app#//@connections.0"/>
   <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_3.app#//@connections.1"/>
   <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_4.app#//@connections.0"/>
@@ -172,4 +194,52 @@
   <hwConnections href="APPS/CAN_NODE/v4_1_16/CAN_NODE_0.app#//@connections.6"/>
   <hwConnections href="APPS/CAN_NODE/v4_1_16/CAN_NODE_0.app#//@connections.7"/>
   <hwConnections href="APPS/CAN_NODE/v4_1_16/CAN_NODE_0.app#//@connections.8"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.0"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.1"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.2"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.3"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.4"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.5"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.6"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.7"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.8"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.9"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.10"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.11"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.12"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.13"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.14"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.15"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.16"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.17"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.18"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.19"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.20"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.21"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.22"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.23"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.24"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.25"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.26"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.27"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.28"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.29"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.30"/>
+  <hwConnections href="APPS/BUS_IO/v4_0_2/BUS_IO_0.app#//@connections.31"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_0.app#//@connections.1"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_0.app#//@connections.2"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_0.app#//@connections.4"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_0.app#//@connections.5"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_1.app#//@connections.1"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_1.app#//@connections.2"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_1.app#//@connections.4"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_1.app#//@connections.5"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_2.app#//@connections.1"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_2.app#//@connections.2"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_2.app#//@connections.4"/>
+  <hwConnections href="APPS/PWM/v4_1_10/PWM_2.app#//@connections.5"/>
+  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_5.app#//@connections.0"/>
+  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_5.app#//@connections.1"/>
+  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_6.app#//@connections.0"/>
+  <hwConnections href="APPS/DIGITAL_IO/v4_0_16/DIGITAL_IO_6.app#//@connections.1"/>
 </ApplicationModel:ApplicationData>

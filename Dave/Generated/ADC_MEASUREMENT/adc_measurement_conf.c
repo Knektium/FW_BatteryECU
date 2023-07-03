@@ -107,97 +107,11 @@ const  XMC_VADC_GLOBAL_CLASS_t global_iclass_config =
 
 /******************************* CHANNEL CONFIG *******************************/
 
-/*********************** Channel_Voltage1 Configurations ************************************/
+/*********************** Channel_Voltage Configurations ************************************/
 
 
-/*Channel_Voltage1 ADC Channel configuration structure*/
-XMC_VADC_CHANNEL_CONFIG_t  Channel_Voltage1_ch_config =
-{
-  .input_class                = (uint32_t) XMC_VADC_CHANNEL_CONV_GLOBAL_CLASS0,  /* Global ICLASS 0 selected */
-  .lower_boundary_select 	  = (uint32_t) XMC_VADC_CHANNEL_BOUNDARY_GROUP_BOUND0,
-  .upper_boundary_select 	  = (uint32_t) XMC_VADC_CHANNEL_BOUNDARY_GROUP_BOUND0,
-  .event_gen_criteria         = (uint32_t) XMC_VADC_CHANNEL_EVGEN_NEVER, /*Channel Event disabled */
-  .sync_conversion  		  = (uint32_t) 0,                            /* Sync feature disabled*/
-  .alternate_reference        = (uint32_t) XMC_VADC_CHANNEL_REF_INTREF,  /* Internal reference selected */
-  .result_reg_number          = (uint32_t) 12,                           /* GxRES[12] selected */
-  .use_global_result          = (uint32_t) 0, 				             /* Use Group result register*/
-  .result_alignment           = (uint32_t) XMC_VADC_RESULT_ALIGN_RIGHT,  /* Result alignment - Right Aligned*/
-  .broken_wire_detect_channel = (uint32_t) XMC_VADC_CHANNEL_BWDCH_VAGND, /* No Broken wire mode select*/
-  .broken_wire_detect		  = (uint32_t) 0,    		                 /* No Broken wire detection*/
-  .bfl                        = (uint32_t) 0,                            /* No Boundary flag */
-  .channel_priority           = (uint32_t) 0,                   		 /* Lowest Priority 0 selected*/
-  .alias_channel              = (int8_t) -1,                         /* ALIAS is Disabled*/
-};
-
-/*Channel_Voltage1 Result configuration structure*/
-XMC_VADC_RESULT_CONFIG_t Channel_Voltage1_res_config =
-{
-  .data_reduction_control  = (uint8_t) 0,  /* No Accumulation */
-  .post_processing_mode    = (uint32_t) XMC_VADC_DMM_REDUCTION_MODE,
-  .wait_for_read_mode  	   = (uint32_t) 0,  /* Disabled */
-  .part_of_fifo       	   = (uint32_t) 0 , /* No FIFO */
-  .event_gen_enable   	   = (uint32_t) 0   /* Disable Result event */
-};
-
-/* Channel_Voltage1 ADC channel Handle */
-ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage1_handle =
-{
-  .ch_num        = (uint8_t) 4,
-  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G1,
-  .group_index	 = (uint8_t) 1,
-  .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Voltage1_ch_config,
-  .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Voltage1_res_config, 
-};
-
-
-/*********************** Channel_Voltage2 Configurations ************************************/
-
-
-/*Channel_Voltage2 ADC Channel configuration structure*/
-XMC_VADC_CHANNEL_CONFIG_t  Channel_Voltage2_ch_config =
-{
-  .input_class                = (uint32_t) XMC_VADC_CHANNEL_CONV_GLOBAL_CLASS0,  /* Global ICLASS 0 selected */
-  .lower_boundary_select 	  = (uint32_t) XMC_VADC_CHANNEL_BOUNDARY_GROUP_BOUND0,
-  .upper_boundary_select 	  = (uint32_t) XMC_VADC_CHANNEL_BOUNDARY_GROUP_BOUND0,
-  .event_gen_criteria         = (uint32_t) XMC_VADC_CHANNEL_EVGEN_NEVER, /*Channel Event disabled */
-  .sync_conversion  		  = (uint32_t) 0,                            /* Sync feature disabled*/
-  .alternate_reference        = (uint32_t) XMC_VADC_CHANNEL_REF_INTREF,  /* Internal reference selected */
-  .result_reg_number          = (uint32_t) 4,                           /* GxRES[4] selected */
-  .use_global_result          = (uint32_t) 0, 				             /* Use Group result register*/
-  .result_alignment           = (uint32_t) XMC_VADC_RESULT_ALIGN_RIGHT,  /* Result alignment - Right Aligned*/
-  .broken_wire_detect_channel = (uint32_t) XMC_VADC_CHANNEL_BWDCH_VAGND, /* No Broken wire mode select*/
-  .broken_wire_detect		  = (uint32_t) 0,    		                 /* No Broken wire detection*/
-  .bfl                        = (uint32_t) 0,                            /* No Boundary flag */
-  .channel_priority           = (uint32_t) 0,                   		 /* Lowest Priority 0 selected*/
-  .alias_channel              = (int8_t) -1,                         /* ALIAS is Disabled*/
-};
-
-/*Channel_Voltage2 Result configuration structure*/
-XMC_VADC_RESULT_CONFIG_t Channel_Voltage2_res_config =
-{
-  .data_reduction_control  = (uint8_t) 0,  /* No Accumulation */
-  .post_processing_mode    = (uint32_t) XMC_VADC_DMM_REDUCTION_MODE,
-  .wait_for_read_mode  	   = (uint32_t) 0,  /* Disabled */
-  .part_of_fifo       	   = (uint32_t) 0 , /* No FIFO */
-  .event_gen_enable   	   = (uint32_t) 0   /* Disable Result event */
-};
-
-/* Channel_Voltage2 ADC channel Handle */
-ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage2_handle =
-{
-  .ch_num        = (uint8_t) 2,
-  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G1,
-  .group_index	 = (uint8_t) 1,
-  .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Voltage2_ch_config,
-  .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Voltage2_res_config, 
-};
-
-
-/*********************** Channel_Voltage3 Configurations ************************************/
-
-
-/*Channel_Voltage3 ADC Channel configuration structure*/
-XMC_VADC_CHANNEL_CONFIG_t  Channel_Voltage3_ch_config =
+/*Channel_Voltage ADC Channel configuration structure*/
+XMC_VADC_CHANNEL_CONFIG_t  Channel_Voltage_ch_config =
 {
   .input_class                = (uint32_t) XMC_VADC_CHANNEL_CONV_GLOBAL_CLASS0,  /* Global ICLASS 0 selected */
   .lower_boundary_select 	  = (uint32_t) XMC_VADC_CHANNEL_BOUNDARY_GROUP_BOUND0,
@@ -215,8 +129,8 @@ XMC_VADC_CHANNEL_CONFIG_t  Channel_Voltage3_ch_config =
   .alias_channel              = (int8_t) -1,                         /* ALIAS is Disabled*/
 };
 
-/*Channel_Voltage3 Result configuration structure*/
-XMC_VADC_RESULT_CONFIG_t Channel_Voltage3_res_config =
+/*Channel_Voltage Result configuration structure*/
+XMC_VADC_RESULT_CONFIG_t Channel_Voltage_res_config =
 {
   .data_reduction_control  = (uint8_t) 0,  /* No Accumulation */
   .post_processing_mode    = (uint32_t) XMC_VADC_DMM_REDUCTION_MODE,
@@ -225,14 +139,14 @@ XMC_VADC_RESULT_CONFIG_t Channel_Voltage3_res_config =
   .event_gen_enable   	   = (uint32_t) 0   /* Disable Result event */
 };
 
-/* Channel_Voltage3 ADC channel Handle */
-ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage3_handle =
+/* Channel_Voltage ADC channel Handle */
+ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Voltage_handle =
 {
-  .ch_num        = (uint8_t) 3,
+  .ch_num        = (uint8_t) 4,
   .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G1,
   .group_index	 = (uint8_t) 1,
-  .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Voltage3_ch_config,
-  .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Voltage3_res_config, 
+  .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Voltage_ch_config,
+  .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Voltage_res_config, 
 };
 
 
@@ -248,14 +162,14 @@ XMC_VADC_CHANNEL_CONFIG_t  Channel_Current_ch_config =
   .event_gen_criteria         = (uint32_t) XMC_VADC_CHANNEL_EVGEN_NEVER, /*Channel Event disabled */
   .sync_conversion  		  = (uint32_t) 0,                            /* Sync feature disabled*/
   .alternate_reference        = (uint32_t) XMC_VADC_CHANNEL_REF_INTREF,  /* Internal reference selected */
-  .result_reg_number          = (uint32_t) 10,                           /* GxRES[10] selected */
+  .result_reg_number          = (uint32_t) 7,                           /* GxRES[7] selected */
   .use_global_result          = (uint32_t) 0, 				             /* Use Group result register*/
   .result_alignment           = (uint32_t) XMC_VADC_RESULT_ALIGN_RIGHT,  /* Result alignment - Right Aligned*/
   .broken_wire_detect_channel = (uint32_t) XMC_VADC_CHANNEL_BWDCH_VAGND, /* No Broken wire mode select*/
   .broken_wire_detect		  = (uint32_t) 0,    		                 /* No Broken wire detection*/
   .bfl                        = (uint32_t) 0,                            /* No Boundary flag */
   .channel_priority           = (uint32_t) 0,                   		 /* Lowest Priority 0 selected*/
-  .alias_channel              = (int8_t) -1,                         /* ALIAS is Disabled*/
+  .alias_channel              = (int8_t) 1  /* Channel is Aliased*/
 };
 
 /*Channel_Current Result configuration structure*/
@@ -272,8 +186,8 @@ XMC_VADC_RESULT_CONFIG_t Channel_Current_res_config =
 ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Current_handle =
 {
   .ch_num        = (uint8_t) 0,
-  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G1,
-  .group_index	 = (uint8_t) 1,
+  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G0,
+  .group_index	 = (uint8_t) 0,
   .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Current_ch_config,
   .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Current_res_config, 
 };
@@ -291,14 +205,14 @@ XMC_VADC_CHANNEL_CONFIG_t  Channel_Temperature1_ch_config =
   .event_gen_criteria         = (uint32_t) XMC_VADC_CHANNEL_EVGEN_NEVER, /*Channel Event disabled */
   .sync_conversion  		  = (uint32_t) 0,                            /* Sync feature disabled*/
   .alternate_reference        = (uint32_t) XMC_VADC_CHANNEL_REF_INTREF,  /* Internal reference selected */
-  .result_reg_number          = (uint32_t) 7,                           /* GxRES[7] selected */
+  .result_reg_number          = (uint32_t) 9,                           /* GxRES[9] selected */
   .use_global_result          = (uint32_t) 0, 				             /* Use Group result register*/
   .result_alignment           = (uint32_t) XMC_VADC_RESULT_ALIGN_RIGHT,  /* Result alignment - Right Aligned*/
   .broken_wire_detect_channel = (uint32_t) XMC_VADC_CHANNEL_BWDCH_VAGND, /* No Broken wire mode select*/
   .broken_wire_detect		  = (uint32_t) 0,    		                 /* No Broken wire detection*/
   .bfl                        = (uint32_t) 0,                            /* No Boundary flag */
   .channel_priority           = (uint32_t) 0,                   		 /* Lowest Priority 0 selected*/
-  .alias_channel              = (int8_t) 5  /* Channel is Aliased*/
+  .alias_channel              = (int8_t) 0  /* Channel is Aliased*/
 };
 
 /*Channel_Temperature1 Result configuration structure*/
@@ -314,7 +228,7 @@ XMC_VADC_RESULT_CONFIG_t Channel_Temperature1_res_config =
 /* Channel_Temperature1 ADC channel Handle */
 ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Temperature1_handle =
 {
-  .ch_num        = (uint8_t) 0,
+  .ch_num        = (uint8_t) 1,
   .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G0,
   .group_index	 = (uint8_t) 0,
   .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Temperature1_ch_config,
@@ -334,14 +248,14 @@ XMC_VADC_CHANNEL_CONFIG_t  Channel_Temperature2_ch_config =
   .event_gen_criteria         = (uint32_t) XMC_VADC_CHANNEL_EVGEN_NEVER, /*Channel Event disabled */
   .sync_conversion  		  = (uint32_t) 0,                            /* Sync feature disabled*/
   .alternate_reference        = (uint32_t) XMC_VADC_CHANNEL_REF_INTREF,  /* Internal reference selected */
-  .result_reg_number          = (uint32_t) 9,                           /* GxRES[9] selected */
+  .result_reg_number          = (uint32_t) 10,                           /* GxRES[10] selected */
   .use_global_result          = (uint32_t) 0, 				             /* Use Group result register*/
   .result_alignment           = (uint32_t) XMC_VADC_RESULT_ALIGN_RIGHT,  /* Result alignment - Right Aligned*/
   .broken_wire_detect_channel = (uint32_t) XMC_VADC_CHANNEL_BWDCH_VAGND, /* No Broken wire mode select*/
   .broken_wire_detect		  = (uint32_t) 0,    		                 /* No Broken wire detection*/
   .bfl                        = (uint32_t) 0,                            /* No Boundary flag */
   .channel_priority           = (uint32_t) 0,                   		 /* Lowest Priority 0 selected*/
-  .alias_channel              = (int8_t) 7  /* Channel is Aliased*/
+  .alias_channel              = (int8_t) 1  /* Channel is Aliased*/
 };
 
 /*Channel_Temperature2 Result configuration structure*/
@@ -357,9 +271,9 @@ XMC_VADC_RESULT_CONFIG_t Channel_Temperature2_res_config =
 /* Channel_Temperature2 ADC channel Handle */
 ADC_MEASUREMENT_CHANNEL_t ADC_MEASUREMENT_Channel_Temperature2_handle =
 {
-  .ch_num        = (uint8_t) 1,
-  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G0,
-  .group_index	 = (uint8_t) 0,
+  .ch_num        = (uint8_t) 0,
+  .group_handle  = (VADC_G_TypeDef*)(void*) VADC_G1,
+  .group_index	 = (uint8_t) 1,
   .ch_handle	 = (XMC_VADC_CHANNEL_CONFIG_t*) &Channel_Temperature2_ch_config,
   .res_handle	 = (XMC_VADC_RESULT_CONFIG_t*) &Channel_Temperature2_res_config, 
 };
@@ -370,9 +284,7 @@ ADC_MEASUREMENT_CHANNEL_ARRAY_t ADC_MEASUREMENT_channel_array=
 {
   .channel_array =
 	{
-	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Voltage1_handle,
-	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Voltage2_handle,
-	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Voltage3_handle,
+	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Voltage_handle,
 	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Current_handle,
 	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Temperature1_handle,
 	  (ADC_MEASUREMENT_CHANNEL_t *)&ADC_MEASUREMENT_Channel_Temperature2_handle,

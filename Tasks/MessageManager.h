@@ -23,9 +23,9 @@ typedef struct BatteryControl_s {
 
 typedef struct BatteryStatus_s {
 	uint16_t Current;
-	uint16_t BatteryOneVoltage;
-	uint16_t BatteryTwoVoltage;
-	uint16_t BatteryThreeVoltage;
+	uint16_t BatteryVoltage;
+	uint16_t TemperatureOne;
+	uint16_t TemperatureTwo;
 } BatteryStatus_t;
 
 extern void MessageManager_Send_BatteryStatus(BatteryStatus_t *s, uint32_t to_node);

@@ -2,34 +2,16 @@
 #include "FREERTOS/FreeRTOS.h"
 #include "Tasks/MessageManager.h"
 
-#define VCC_MILLIVOLT 4738.0
-#define MAX_CELL_MILLIVOLTAGE 4600
-#define MIN_CELL_MILLIVOLTAGE 2100
+#define VCC_MILLIVOLT 4950.0
+#define MAX_CELL_MILLIVOLTAGE 1900
+#define MIN_CELL_MILLIVOLTAGE 950
 
 
-BaseType_t get_millivoltage_battery_one()
+BaseType_t get_millivoltage_battery()
 {
 	XMC_VADC_RESULT_SIZE_t result;
 
-	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Voltage1);
-
-	return (VCC_MILLIVOLT / 4096.0) * result * 10;
-}
-
-BaseType_t get_millivoltage_battery_two()
-{
-	XMC_VADC_RESULT_SIZE_t result;
-
-	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Voltage2);
-
-	return (VCC_MILLIVOLT / 4096.0) * result * 10;
-}
-
-BaseType_t get_millivoltage_battery_three()
-{
-	XMC_VADC_RESULT_SIZE_t result;
-
-	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Voltage3);
+	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Voltage);
 
 	return (VCC_MILLIVOLT / 4096.0) * result * 10;
 }
@@ -37,7 +19,7 @@ BaseType_t get_millivoltage_battery_three()
 BaseType_t get_current()
 {
 	XMC_VADC_RESULT_SIZE_t result;
-	BaseType_t zero_level = 2200;
+	BaseType_t zero_level = 2500;
 	BaseType_t mvolt_a = 0;
 
 	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Current);
@@ -47,12 +29,32 @@ BaseType_t get_current()
 		return 0;
 	}
 
-	return (mvolt_a - zero_level) * 10; // 100 mV = 1000 mA
+	return ((mvolt_a - zero_level) / 4) * 10; // 100 mV = 1000 mA
+}
+
+BaseType_t get_temperature_1()
+{
+	XMC_VADC_RESULT_SIZE_t result;
+
+	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Temperature1);
+
+	return (VCC_MILLIVOLT / 4096.0) * result;
+}
+
+BaseType_t get_temperature_2()
+{
+	XMC_VADC_RESULT_SIZE_t result;
+
+	result = ADC_MEASUREMENT_GetResult(&ADC_MEASUREMENT_Channel_Temperature2);
+
+	return (VCC_MILLIVOLT / 4096.0) * result;
 }
 
 void Handle_BatteryControl_Received(BatteryControl_t msg, uint8_t from_node_id, uint8_t to_node_id)
 {
 	if (89U == msg.Off) {
+		uint16_t chg = 0x00;
+		BUS_IO_Write(&BUS_IO_ChargerControl, chg);
 		DIGITAL_IO_SetOutputLow(&DIGITAL_IO_PowerOn);
 	}
 }
@@ -60,32 +62,37 @@ void Handle_BatteryControl_Received(BatteryControl_t msg, uint8_t from_node_id, 
 static void Task_Main(void *pvParameters)
 {
 	BatteryStatus_t battery_status;
-	BaseType_t mvolt, mampere;
+	BaseType_t mvolt, mampere, temp1, temp2;
+	BaseType_t button_count = 0;
+	int state = 0;
 
-	DIGITAL_IO_SetOutputHigh(&DIGITAL_IO_PowerOn);
-	DIGITAL_IO_SetOutputLow(&DIGITAL_IO_StatusLED);
+	uint16_t chg = 0xFF;
+	BUS_IO_Write(&BUS_IO_ChargerControl, chg);
 
 	while (1) {
-		vTaskDelay(1000 / portTICK_PERIOD_MS);
-		DIGITAL_IO_SetOutputLow(&DIGITAL_IO_StatusLED);
+		vTaskDelay(333 / portTICK_PERIOD_MS);
 
-		mvolt = get_millivoltage_battery_one();
-		if (mvolt < MIN_CELL_MILLIVOLTAGE * 3 || mvolt > MAX_CELL_MILLIVOLTAGE * 3) {
+		if (0 == DIGITAL_IO_GetInput(&DIGITAL_IO_Button)) {
+			button_count = button_count + 1;
+		} else {
+			button_count = 0;
+		}
+
+		if (5 == button_count) {
+			if (0 == state) {
+				state = 1;
+				DIGITAL_IO_SetOutputHigh(&DIGITAL_IO_PowerOn);
+			} else if (1 == state) {
+				state = 2;
+				DIGITAL_IO_SetOutputLow(&DIGITAL_IO_PowerOn);
+			}
+		}
+
+		mvolt = get_millivoltage_battery();
+		if (mvolt < MIN_CELL_MILLIVOLTAGE * 10 || mvolt > MAX_CELL_MILLIVOLTAGE * 10) {
 			DIGITAL_IO_SetOutputLow(&DIGITAL_IO_PowerOn);
 		}
-		battery_status.BatteryOneVoltage = (uint16_t) mvolt;
-
-		mvolt = get_millivoltage_battery_two();
-		if (mvolt < MIN_CELL_MILLIVOLTAGE * 2 || mvolt > MAX_CELL_MILLIVOLTAGE * 2) {
-			DIGITAL_IO_SetOutputLow(&DIGITAL_IO_PowerOn);
-		}
-		battery_status.BatteryTwoVoltage = (uint16_t) mvolt;
-
-		mvolt = get_millivoltage_battery_three();
-		if (mvolt < MIN_CELL_MILLIVOLTAGE || mvolt > MAX_CELL_MILLIVOLTAGE) {
-			DIGITAL_IO_SetOutputLow(&DIGITAL_IO_PowerOn);
-		}
-		battery_status.BatteryThreeVoltage = (uint16_t) mvolt;
+		battery_status.BatteryVoltage = (uint16_t) mvolt;
 
 		mampere = get_current();
 		if (mampere > 4000) {
@@ -93,8 +100,18 @@ static void Task_Main(void *pvParameters)
 		}
 		battery_status.Current = (uint16_t) mampere;
 
+		temp1 = get_temperature_1();
+		battery_status.TemperatureOne = (uint16_t) temp1;
+
+		temp2 = get_temperature_2();
+		battery_status.TemperatureTwo = (uint16_t) temp2;
+
 		MessageManager_Send_BatteryStatus(&battery_status, 0x00);
-		DIGITAL_IO_SetOutputHigh(&DIGITAL_IO_StatusLED);
+
+		PWM_SetDutyCycle(&PWM_StatusRed, 10000);
+		PWM_Start(&PWM_StatusRed);
+		PWM_SetDutyCycle(&PWM_StatusBlue, 10000);
+		PWM_Start(&PWM_StatusBlue);
 	}
 }
 

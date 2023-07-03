@@ -8,7 +8,7 @@
                 "name": "Off",
                 "size": "0x08",
                 "offset": "0x0",
-                "type": "uint"
+		"type": "uint"
             }
         ]
     },
@@ -21,25 +21,25 @@
                 "name": "Current",
                 "size": "0x10",
                 "offset": "0x0",
-                "type": "uint"
+		"type": "uint"
             },
             {
-                "name": "BatteryOneVoltage",
+                "name": "BatteryVoltage",
                 "size": "0x10",
                 "offset": "0x10",
-                "type": "uint"
+		"type": "uint"
             },
             {
-                "name": "BatteryTwoVoltage",
+                "name": "TemperatureOne",
                 "size": "0x10",
                 "offset": "0x20",
-                "type": "uint"
+		"type": "uint"
             },
             {
-                "name": "BatteryThreeVoltage",
+                "name": "TemperatureTwo",
                 "size": "0x10",
                 "offset": "0x30",
-                "type": "uint"
+		"type": "uint"
             }
         ]
     }

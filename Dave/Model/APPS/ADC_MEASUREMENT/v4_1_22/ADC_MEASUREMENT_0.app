@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ResourceModel:App xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ResourceModel="http://www.infineon.com/Davex/Resource.ecore" name="ADC_MEASUREMENT" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0" description="Incorporates analog to digital conversion for the required measurements." mode="NOTSHARABLE" version="4.1.22" minDaveVersion="4.0.0" instanceLabel="ADC_MEASUREMENT_Voltage" appLabel="" containingProxySignal="true">
   <properties singleton="true" provideInit="true"/>
-  <virtualSignals name="Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a" hwSignal="gch" hwResource="//@hwResources.54"/>
-  <virtualSignals name="Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b" hwSignal="gch" hwResource="//@hwResources.55"/>
-  <virtualSignals name="Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c" hwSignal="gch" hwResource="//@hwResources.56"/>
-  <virtualSignals name="Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d" hwSignal="gch" hwResource="//@hwResources.57"/>
-  <virtualSignals name="Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e" hwSignal="gch" hwResource="//@hwResources.58"/>
-  <virtualSignals name="Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f" hwSignal="gch" hwResource="//@hwResources.59"/>
+  <virtualSignals name="Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a" hwSignal="gch" hwResource="//@hwResources.54"/>
+  <virtualSignals name="Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b" hwSignal="gch" hwResource="//@hwResources.55"/>
+  <virtualSignals name="Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c" hwSignal="gch" hwResource="//@hwResources.56"/>
+  <virtualSignals name="Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d" hwSignal="gch" hwResource="//@hwResources.57"/>
+  <virtualSignals name="" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e" hwSignal="gch" hwResource="//@hwResources.58" required="false"/>
+  <virtualSignals name="" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f" hwSignal="gch" hwResource="//@hwResources.59" required="false"/>
   <virtualSignals name="Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g" hwSignal="gch" hwResource="//@hwResources.60" required="false"/>
   <virtualSignals name="Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h" hwSignal="gch" hwResource="//@hwResources.61" required="false"/>
   <virtualSignals name="Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i" hwSignal="gch" hwResource="//@hwResources.62" required="false"/>
@@ -27,12 +27,12 @@
   <virtualSignals name="Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_x" hwSignal="gch" hwResource="//@hwResources.77" required="false"/>
   <virtualSignals name="Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_y" hwSignal="gch" hwResource="//@hwResources.78" required="false"/>
   <virtualSignals name="Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_z" hwSignal="gch" hwResource="//@hwResources.79" required="false"/>
-  <virtualSignals name="pad_signal_Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_a" hwSignal="pad" hwResource="//@hwResources.2"/>
-  <virtualSignals name="pad_signal_Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_b" hwSignal="pad" hwResource="//@hwResources.3"/>
-  <virtualSignals name="pad_signal_Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_c" hwSignal="pad" hwResource="//@hwResources.4"/>
-  <virtualSignals name="pad_signal_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_d" hwSignal="pad" hwResource="//@hwResources.5"/>
-  <virtualSignals name="pad_signal_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_e" hwSignal="pad" hwResource="//@hwResources.6"/>
-  <virtualSignals name="pad_signal_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_f" hwSignal="pad" hwResource="//@hwResources.7"/>
+  <virtualSignals name="pad_signal_Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_a" hwSignal="pad" hwResource="//@hwResources.2"/>
+  <virtualSignals name="pad_signal_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_b" hwSignal="pad" hwResource="//@hwResources.3"/>
+  <virtualSignals name="pad_signal_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_c" hwSignal="pad" hwResource="//@hwResources.4"/>
+  <virtualSignals name="pad_signal_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_d" hwSignal="pad" hwResource="//@hwResources.5"/>
+  <virtualSignals name="pad_signal_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_e" hwSignal="pad" hwResource="//@hwResources.6" required="false"/>
+  <virtualSignals name="pad_signal_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_f" hwSignal="pad" hwResource="//@hwResources.7" required="false"/>
   <virtualSignals name="pad_signal_Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_g" hwSignal="pad" hwResource="//@hwResources.8" required="false"/>
   <virtualSignals name="pad_signal_Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_h" hwSignal="pad" hwResource="//@hwResources.9" required="false"/>
   <virtualSignals name="pad_signal_Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_i" hwSignal="pad" hwResource="//@hwResources.10" required="false"/>
@@ -53,12 +53,12 @@
   <virtualSignals name="pad_signal_Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_x" hwSignal="pad" hwResource="//@hwResources.25" required="false"/>
   <virtualSignals name="pad_signal_Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_y" hwSignal="pad" hwResource="//@hwResources.26" required="false"/>
   <virtualSignals name="pad_signal_Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_z" hwSignal="pad" hwResource="//@hwResources.27" required="false"/>
-  <virtualSignals name="Channel_Voltage1_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_a" hwSignal="pin" hwResource="//@hwResources.28"/>
-  <virtualSignals name="Channel_Voltage2_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_b" hwSignal="pin" hwResource="//@hwResources.29"/>
-  <virtualSignals name="Channel_Voltage3_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_c" hwSignal="pin" hwResource="//@hwResources.30"/>
-  <virtualSignals name="Channel_Current_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_d" hwSignal="pin" hwResource="//@hwResources.31"/>
-  <virtualSignals name="Channel_Temperature1_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_e" hwSignal="pin" hwResource="//@hwResources.32"/>
-  <virtualSignals name="Channel_Temperature2_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_f" hwSignal="pin" hwResource="//@hwResources.33"/>
+  <virtualSignals name="Channel_Voltage_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_a" hwSignal="pin" hwResource="//@hwResources.28"/>
+  <virtualSignals name="Channel_Current_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_b" hwSignal="pin" hwResource="//@hwResources.29"/>
+  <virtualSignals name="Channel_Temperature1_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_c" hwSignal="pin" hwResource="//@hwResources.30"/>
+  <virtualSignals name="Channel_Temperature2_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_d" hwSignal="pin" hwResource="//@hwResources.31"/>
+  <virtualSignals name="_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_e" hwSignal="pin" hwResource="//@hwResources.32"/>
+  <virtualSignals name="_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_f" hwSignal="pin" hwResource="//@hwResources.33"/>
   <virtualSignals name="Channel_G_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_g" hwSignal="pin" hwResource="//@hwResources.34"/>
   <virtualSignals name="Channel_H_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_h" hwSignal="pin" hwResource="//@hwResources.35"/>
   <virtualSignals name="Channel_I_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_i" hwSignal="pin" hwResource="//@hwResources.36"/>
@@ -79,12 +79,12 @@
   <virtualSignals name="Channel_X_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_x" hwSignal="pin" hwResource="//@hwResources.51"/>
   <virtualSignals name="Channel_Y_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_y" hwSignal="pin" hwResource="//@hwResources.52"/>
   <virtualSignals name="Channel_Z_pin_signal" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_pin_pad_signal_z" hwSignal="pin" hwResource="//@hwResources.53"/>
-  <virtualSignals name="result_register_Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result" hwSignal="res_sel" hwResource="//@hwResources.80"/>
-  <virtualSignals name="result_register_Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result" hwSignal="res_sel" hwResource="//@hwResources.81"/>
-  <virtualSignals name="result_register_Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result" hwSignal="res_sel" hwResource="//@hwResources.82"/>
-  <virtualSignals name="result_register_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result" hwSignal="res_sel" hwResource="//@hwResources.83"/>
-  <virtualSignals name="result_register_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result" hwSignal="res_sel" hwResource="//@hwResources.84"/>
-  <virtualSignals name="result_register_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result" hwSignal="res_sel" hwResource="//@hwResources.85"/>
+  <virtualSignals name="result_register_Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result" hwSignal="res_sel" hwResource="//@hwResources.80"/>
+  <virtualSignals name="result_register_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result" hwSignal="res_sel" hwResource="//@hwResources.81"/>
+  <virtualSignals name="result_register_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result" hwSignal="res_sel" hwResource="//@hwResources.82"/>
+  <virtualSignals name="result_register_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result" hwSignal="res_sel" hwResource="//@hwResources.83"/>
+  <virtualSignals name="result_register_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result" hwSignal="res_sel" hwResource="//@hwResources.84" required="false"/>
+  <virtualSignals name="result_register_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result" hwSignal="res_sel" hwResource="//@hwResources.85" required="false"/>
   <virtualSignals name="result_register_Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_result" hwSignal="res_sel" hwResource="//@hwResources.86" required="false"/>
   <virtualSignals name="result_register_Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_result" hwSignal="res_sel" hwResource="//@hwResources.87" required="false"/>
   <virtualSignals name="result_register_Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_result" hwSignal="res_sel" hwResource="//@hwResources.88" required="false"/>
@@ -105,12 +105,12 @@
   <virtualSignals name="result_register_Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_x_result" hwSignal="res_sel" hwResource="//@hwResources.103" required="false"/>
   <virtualSignals name="result_register_Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_y_result" hwSignal="res_sel" hwResource="//@hwResources.104" required="false"/>
   <virtualSignals name="result_register_Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_z_result" hwSignal="res_sel" hwResource="//@hwResources.105" required="false"/>
-  <virtualSignals name="channel_selectChannel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_select" hwSignal="select" hwResource="//@hwResources.54"/>
-  <virtualSignals name="channel_selectChannel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_select" hwSignal="select" hwResource="//@hwResources.55"/>
-  <virtualSignals name="channel_selectChannel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_select" hwSignal="select" hwResource="//@hwResources.56"/>
-  <virtualSignals name="channel_selectChannel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_select" hwSignal="select" hwResource="//@hwResources.57"/>
-  <virtualSignals name="channel_selectChannel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_select" hwSignal="select" hwResource="//@hwResources.58"/>
-  <virtualSignals name="channel_selectChannel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_select" hwSignal="select" hwResource="//@hwResources.59"/>
+  <virtualSignals name="channel_selectChannel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_select" hwSignal="select" hwResource="//@hwResources.54"/>
+  <virtualSignals name="channel_selectChannel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_select" hwSignal="select" hwResource="//@hwResources.55"/>
+  <virtualSignals name="channel_selectChannel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_select" hwSignal="select" hwResource="//@hwResources.56"/>
+  <virtualSignals name="channel_selectChannel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_select" hwSignal="select" hwResource="//@hwResources.57"/>
+  <virtualSignals name="channel_select" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_select" hwSignal="select" hwResource="//@hwResources.58" required="false"/>
+  <virtualSignals name="channel_select" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_select" hwSignal="select" hwResource="//@hwResources.59" required="false"/>
   <virtualSignals name="channel_selectChannel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_select" hwSignal="select" hwResource="//@hwResources.60" required="false"/>
   <virtualSignals name="channel_selectChannel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_select" hwSignal="select" hwResource="//@hwResources.61" required="false"/>
   <virtualSignals name="channel_selectChannel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_select" hwSignal="select" hwResource="//@hwResources.62" required="false"/>
@@ -131,12 +131,12 @@
   <virtualSignals name="channel_selectChannel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_x_select" hwSignal="select" hwResource="//@hwResources.77" required="false"/>
   <virtualSignals name="channel_selectChannel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_y_select" hwSignal="select" hwResource="//@hwResources.78" required="false"/>
   <virtualSignals name="channel_selectChannel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_z_select" hwSignal="select" hwResource="//@hwResources.79" required="false"/>
-  <virtualSignals name="result_select_Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result_select" hwSignal="res_sel" hwResource="//@hwResources.54"/>
-  <virtualSignals name="result_select_Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result_select" hwSignal="res_sel" hwResource="//@hwResources.55"/>
-  <virtualSignals name="result_select_Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result_select" hwSignal="res_sel" hwResource="//@hwResources.56"/>
-  <virtualSignals name="result_select_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result_select" hwSignal="res_sel" hwResource="//@hwResources.57"/>
-  <virtualSignals name="result_select_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_select" hwSignal="res_sel" hwResource="//@hwResources.58"/>
-  <virtualSignals name="result_select_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_select" hwSignal="res_sel" hwResource="//@hwResources.59"/>
+  <virtualSignals name="result_select_Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result_select" hwSignal="res_sel" hwResource="//@hwResources.54"/>
+  <virtualSignals name="result_select_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result_select" hwSignal="res_sel" hwResource="//@hwResources.55"/>
+  <virtualSignals name="result_select_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result_select" hwSignal="res_sel" hwResource="//@hwResources.56"/>
+  <virtualSignals name="result_select_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result_select" hwSignal="res_sel" hwResource="//@hwResources.57"/>
+  <virtualSignals name="result_select_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_select" hwSignal="res_sel" hwResource="//@hwResources.58" required="false"/>
+  <virtualSignals name="result_select_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_select" hwSignal="res_sel" hwResource="//@hwResources.59" required="false"/>
   <virtualSignals name="result_select_Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_result_select" hwSignal="res_sel" hwResource="//@hwResources.60" required="false"/>
   <virtualSignals name="result_select_Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_result_select" hwSignal="res_sel" hwResource="//@hwResources.61" required="false"/>
   <virtualSignals name="result_select_Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_result_select" hwSignal="res_sel" hwResource="//@hwResources.62" required="false"/>
@@ -157,12 +157,12 @@
   <virtualSignals name="result_select_Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_x_result_select" hwSignal="res_sel" hwResource="//@hwResources.77" required="false"/>
   <virtualSignals name="result_select_Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_y_result_select" hwSignal="res_sel" hwResource="//@hwResources.78" required="false"/>
   <virtualSignals name="result_select_Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_z_result_select" hwSignal="res_sel" hwResource="//@hwResources.79" required="false"/>
-  <virtualSignals name="event_result_Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result_event" hwSignal="rev" hwResource="//@hwResources.80" required="false" visible="true"/>
-  <virtualSignals name="event_result_Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result_event" hwSignal="rev" hwResource="//@hwResources.81" required="false" visible="true"/>
-  <virtualSignals name="event_result_Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result_event" hwSignal="rev" hwResource="//@hwResources.82" required="false" visible="true"/>
-  <virtualSignals name="event_result_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result_event" hwSignal="rev" hwResource="//@hwResources.83" required="false" visible="true"/>
-  <virtualSignals name="event_result_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_event" hwSignal="rev" hwResource="//@hwResources.84" required="false" visible="true"/>
-  <virtualSignals name="event_result_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_event" hwSignal="rev" hwResource="//@hwResources.85" required="false" visible="true"/>
+  <virtualSignals name="event_result_Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_a_result_event" hwSignal="rev" hwResource="//@hwResources.80" required="false" visible="true"/>
+  <virtualSignals name="event_result_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result_event" hwSignal="rev" hwResource="//@hwResources.81" required="false" visible="true"/>
+  <virtualSignals name="event_result_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result_event" hwSignal="rev" hwResource="//@hwResources.82" required="false" visible="true"/>
+  <virtualSignals name="event_result_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result_event" hwSignal="rev" hwResource="//@hwResources.83" required="false" visible="true"/>
+  <virtualSignals name="event_result_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_event" hwSignal="rev" hwResource="//@hwResources.84" required="false" visible="true"/>
+  <virtualSignals name="event_result_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_event" hwSignal="rev" hwResource="//@hwResources.85" required="false" visible="true"/>
   <virtualSignals name="event_result_Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_result_event" hwSignal="rev" hwResource="//@hwResources.86" required="false" visible="true"/>
   <virtualSignals name="event_result_Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_result_event" hwSignal="rev" hwResource="//@hwResources.87" required="false" visible="true"/>
   <virtualSignals name="event_result_Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_result_event" hwSignal="rev" hwResource="//@hwResources.88" required="false" visible="true"/>
@@ -224,24 +224,20 @@
   <hwResources name="Background class" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/hwres_adc_measurement_global_iclass" resourceGroupUri="peripheral/vadc/*/class/*" mResGrpUri="peripheral/vadc/*/class/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.25"/>
   </hwResources>
-  <hwResources name="Channel_Voltage1_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#1" resourceGroupUri="resources/14.0.1/port/p/2/pad/9" mResGrpUri="port/p/*/pad/*">
+  <hwResources name="Channel_Voltage_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#1" resourceGroupUri="resources/14.0.1/port/p/2/pad/9" mResGrpUri="port/p/*/pad/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.35"/>
   </hwResources>
-  <hwResources name="Channel_Voltage2_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#2" resourceGroupUri="resources/14.0.1/port/p/2/pad/8" mResGrpUri="port/p/*/pad/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.40"/>
-  </hwResources>
-  <hwResources name="Channel_Voltage3_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#3" resourceGroupUri="resources/14.0.1/port/p/2/pad/0" mResGrpUri="port/p/*/pad/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.45"/>
-  </hwResources>
-  <hwResources name="Channel_Current_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#4" resourceGroupUri="resources/14.0.1/port/p/2/pad/2" mResGrpUri="port/p/*/pad/*">
+  <hwResources name="Channel_Current_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#2" resourceGroupUri="resources/14.0.1/port/p/2/pad/3" mResGrpUri="port/p/*/pad/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.29"/>
   </hwResources>
-  <hwResources name="Channel_Temperature1_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#5" resourceGroupUri="resources/14.0.1/port/p/2/pad/0" mResGrpUri="port/p/*/pad/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.0"/>
+  <hwResources name="Channel_Temperature1_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#3" resourceGroupUri="resources/14.0.1/port/p/2/pad/11" mResGrpUri="port/p/*/pad/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.24"/>
   </hwResources>
-  <hwResources name="Channel_Temperature2_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#6" resourceGroupUri="resources/14.0.1/port/p/2/pad/2" mResGrpUri="port/p/*/pad/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.8"/>
+  <hwResources name="Channel_Temperature2_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#4" resourceGroupUri="resources/14.0.1/port/p/2/pad/8" mResGrpUri="port/p/*/pad/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/port2/port2_2.dd#//@provided.55"/>
   </hwResources>
+  <hwResources name="_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#5" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
+  <hwResources name="_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#6" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
   <hwResources name="Channel_G_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#7" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
   <hwResources name="Channel_H_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#8" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
   <hwResources name="Channel_I_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#9" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
@@ -262,24 +258,20 @@
   <hwResources name="Channel_X_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#24" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
   <hwResources name="Channel_Y_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#25" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
   <hwResources name="Channel_Z_pin" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channel_pin#26" resourceGroupUri="" required="false" mResGrpUri="port/p/*/pad/*"/>
-  <hwResources name="pin_Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#1" resourceGroupUri="resources/lqfp64.0.0/devicepackage/0/18" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
+  <hwResources name="pin_Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#1" resourceGroupUri="devicepackage/0/18" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.10"/>
   </hwResources>
-  <hwResources name="pin_Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#2" resourceGroupUri="devicepackage/0/19" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.14"/>
-  </hwResources>
-  <hwResources name="pin_Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#3" resourceGroupUri="devicepackage/0/20" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.15"/>
-  </hwResources>
-  <hwResources name="pin_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#4" resourceGroupUri="devicepackage/0/17" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
+  <hwResources name="pin_Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#2" resourceGroupUri="devicepackage/0/17" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.9"/>
   </hwResources>
-  <hwResources name="pin_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#5" resourceGroupUri="resources/lqfp64.0.0/devicepackage/0/9" mResGrpUri="devicepackage/0/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.4"/>
+  <hwResources name="pin_Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#3" resourceGroupUri="devicepackage/0/15" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.8"/>
   </hwResources>
-  <hwResources name="pin_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#6" resourceGroupUri="resources/lqfp64.0.0/devicepackage/0/11" mResGrpUri="devicepackage/0/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.5"/>
+  <hwResources name="pin_Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#4" resourceGroupUri="devicepackage/0/16" constraintType="GLOBAL_RESOURCE" mResGrpUri="devicepackage/0/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/DEVICEPACKAGE/DEVICEPACKAGE_0.dd#//@provided.30"/>
   </hwResources>
+  <hwResources name="pin_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#5" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
+  <hwResources name="pin_" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#6" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
   <hwResources name="pin_Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#7" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
   <hwResources name="pin_Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#8" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
   <hwResources name="pin_Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#9" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
@@ -300,24 +292,20 @@
   <hwResources name="pin_Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#24" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
   <hwResources name="pin_Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#25" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
   <hwResources name="pin_Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_pin_pad#26" resourceGroupUri="" required="false" mResGrpUri="devicepackage/0/*"/>
-  <hwResources name="Channel_Voltage1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#1" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/4" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
+  <hwResources name="Channel_Voltage" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#1" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/4" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.71"/>
   </hwResources>
-  <hwResources name="Channel_Voltage2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#2" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/0" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.81"/>
-  </hwResources>
-  <hwResources name="Channel_Voltage3" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#3" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/ch/0" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.91"/>
-  </hwResources>
-  <hwResources name="Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#4" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/ch/1" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.64"/>
-  </hwResources>
-  <hwResources name="Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#5" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/ch/0" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
+  <hwResources name="Channel_Current" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#2" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/5" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.8"/>
   </hwResources>
-  <hwResources name="Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#6" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/ch/1" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
+  <hwResources name="Channel_Temperature1" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#3" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/3" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.26"/>
   </hwResources>
+  <hwResources name="Channel_Temperature2" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#4" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/ch/0" mResGrpUri="peripheral/vadc/0/group/*/ch/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.64"/>
+  </hwResources>
+  <hwResources name="" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#5" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
+  <hwResources name="" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#6" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
   <hwResources name="Channel_G" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#7" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
   <hwResources name="Channel_H" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#8" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
   <hwResources name="Channel_I" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#9" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
@@ -338,24 +326,20 @@
   <hwResources name="Channel_X" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#24" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
   <hwResources name="Channel_Y" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#25" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
   <hwResources name="Channel_Z" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_channels#26" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/ch/*"/>
-  <hwResources name="Channel_Voltage1 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#1" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/11" mResGrpUri="peripheral/vadc/0/group/*/*/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.86"/>
-  </hwResources>
-  <hwResources name="Channel_Voltage2 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#2" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/10" mResGrpUri="peripheral/vadc/0/group/*/*/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.88"/>
-  </hwResources>
-  <hwResources name="Channel_Voltage3 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#3" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/result_filter/7" mResGrpUri="peripheral/vadc/0/group/*/*/*">
+  <hwResources name="Channel_Voltage Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#1" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/12" mResGrpUri="peripheral/vadc/0/group/*/*/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.62"/>
   </hwResources>
-  <hwResources name="Channel_Current Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#4" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/result/9" mResGrpUri="peripheral/vadc/0/group/*/*/*">
-    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.54"/>
-  </hwResources>
-  <hwResources name="Channel_Temperature1 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#5" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/result_filter/7" mResGrpUri="peripheral/vadc/0/group/*/*/*">
+  <hwResources name="Channel_Current Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#2" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/4" mResGrpUri="peripheral/vadc/0/group/*/*/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.38"/>
   </hwResources>
-  <hwResources name="Channel_Temperature2 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#6" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/0/result/9" mResGrpUri="peripheral/vadc/0/group/*/*/*">
+  <hwResources name="Channel_Temperature1 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#3" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/11" mResGrpUri="peripheral/vadc/0/group/*/*/*">
     <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.16"/>
   </hwResources>
+  <hwResources name="Channel_Temperature2 Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#4" resourceGroupUri="resources/14.0.1/peripheral/vadc/0/group/1/result/10" mResGrpUri="peripheral/vadc/0/group/*/*/*">
+    <downwardMapList xsi:type="ResourceModel:ResourceGroup" href="../../../HW_RESOURCES/vadc/vadc_0.dd#//@provided.54"/>
+  </hwResources>
+  <hwResources name=" Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#5" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/*/*"/>
+  <hwResources name=" Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#6" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/*/*"/>
   <hwResources name="Channel_G Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#7" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/*/*"/>
   <hwResources name="Channel_H Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#8" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/*/*"/>
   <hwResources name="Channel_I Result" URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/rarray_hwres_adc_measurement_result_reg#9" resourceGroupUri="" required="false" mResGrpUri="peripheral/vadc/0/group/*/*/*"/>
@@ -438,8 +422,8 @@
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_b/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b" systemDefined="true" sourceSignal="pad_signal_Channel_B" targetSignal="Channel_B" srcVirtualSignal="//@virtualSignals.27" targetVirtualSignal="//@virtualSignals.1"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_c/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c" systemDefined="true" sourceSignal="pad_signal_Channel_C" targetSignal="Channel_C" srcVirtualSignal="//@virtualSignals.28" targetVirtualSignal="//@virtualSignals.2"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_d/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d" systemDefined="true" sourceSignal="pad_signal_Channel_D" targetSignal="Channel_D" srcVirtualSignal="//@virtualSignals.29" targetVirtualSignal="//@virtualSignals.3"/>
-  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_e/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e" systemDefined="true" sourceSignal="pad_signal_Channel_E" targetSignal="Channel_E" srcVirtualSignal="//@virtualSignals.30" targetVirtualSignal="//@virtualSignals.4"/>
-  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_f/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f" systemDefined="true" sourceSignal="pad_signal_Channel_F" targetSignal="Channel_F" srcVirtualSignal="//@virtualSignals.31" targetVirtualSignal="//@virtualSignals.5"/>
+  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_e/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e" systemDefined="true" sourceSignal="pad_signal_Channel_E" targetSignal="Channel_E" required="false" srcVirtualSignal="//@virtualSignals.30" targetVirtualSignal="//@virtualSignals.4"/>
+  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_f/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f" systemDefined="true" sourceSignal="pad_signal_Channel_F" targetSignal="Channel_F" required="false" srcVirtualSignal="//@virtualSignals.31" targetVirtualSignal="//@virtualSignals.5"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_g/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g" systemDefined="true" sourceSignal="pad_signal_Channel_G" targetSignal="Channel_G" required="false" srcVirtualSignal="//@virtualSignals.32" targetVirtualSignal="//@virtualSignals.6"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_h/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h" systemDefined="true" sourceSignal="pad_signal_Channel_H" targetSignal="Channel_H" required="false" srcVirtualSignal="//@virtualSignals.33" targetVirtualSignal="//@virtualSignals.7"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_pin_signal_i/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i" systemDefined="true" sourceSignal="pad_signal_Channel_I" targetSignal="Channel_I" required="false" srcVirtualSignal="//@virtualSignals.34" targetVirtualSignal="//@virtualSignals.8"/>
@@ -490,8 +474,8 @@
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_b_result" systemDefined="true" sourceSignal="result_select_Channel_B" targetSignal="result_register_Channel_B" srcVirtualSignal="//@virtualSignals.131" targetVirtualSignal="//@virtualSignals.79"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_c_result" systemDefined="true" sourceSignal="result_select_Channel_C" targetSignal="result_register_Channel_C" srcVirtualSignal="//@virtualSignals.132" targetVirtualSignal="//@virtualSignals.80"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_d_result" systemDefined="true" sourceSignal="result_select_Channel_D" targetSignal="result_register_Channel_D" srcVirtualSignal="//@virtualSignals.133" targetVirtualSignal="//@virtualSignals.81"/>
-  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result" systemDefined="true" sourceSignal="result_select_Channel_E" targetSignal="result_register_Channel_E" srcVirtualSignal="//@virtualSignals.134" targetVirtualSignal="//@virtualSignals.82"/>
-  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result" systemDefined="true" sourceSignal="result_select_Channel_F" targetSignal="result_register_Channel_F" srcVirtualSignal="//@virtualSignals.135" targetVirtualSignal="//@virtualSignals.83"/>
+  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_e_result" systemDefined="true" sourceSignal="result_select_Channel_E" targetSignal="result_register_Channel_E" required="false" srcVirtualSignal="//@virtualSignals.134" targetVirtualSignal="//@virtualSignals.82"/>
+  <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_f_result" systemDefined="true" sourceSignal="result_select_Channel_F" targetSignal="result_register_Channel_F" required="false" srcVirtualSignal="//@virtualSignals.135" targetVirtualSignal="//@virtualSignals.83"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_g_result" systemDefined="true" sourceSignal="result_select_Channel_G" targetSignal="result_register_Channel_G" required="false" srcVirtualSignal="//@virtualSignals.136" targetVirtualSignal="//@virtualSignals.84"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_h_result" systemDefined="true" sourceSignal="result_select_Channel_H" targetSignal="result_register_Channel_H" required="false" srcVirtualSignal="//@virtualSignals.137" targetVirtualSignal="//@virtualSignals.85"/>
   <connections URI="http://resources/4.1.22/app/ADC_MEASUREMENT/0/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_result_select/http://resources/4.1.22/app/ADC_MEASUREMENT/0/vs_adc_measurement_channel_i_result" systemDefined="true" sourceSignal="result_select_Channel_I" targetSignal="result_register_Channel_I" required="false" srcVirtualSignal="//@virtualSignals.138" targetVirtualSignal="//@virtualSignals.86"/>

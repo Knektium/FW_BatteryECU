@@ -66,18 +66,6 @@ const DIGITAL_IO_t DIGITAL_IO_PowerOn =
   .hwctrl = XMC_GPIO_HWCTRL_DISABLED
 };
 		
-const DIGITAL_IO_t DIGITAL_IO_StatusLED =
-{
-  .gpio_port = XMC_GPIO_PORT4,
-  .gpio_pin = 11U,
-  .gpio_config = {
-    .mode = XMC_GPIO_MODE_OUTPUT_PUSH_PULL,
-    .output_level = XMC_GPIO_OUTPUT_LEVEL_LOW,
-
-  },
-  .hwctrl = XMC_GPIO_HWCTRL_DISABLED
-};
-		
 const DIGITAL_IO_t DIGITAL_IO_CanStandby =
 {
   .gpio_port = XMC_GPIO_PORT3,
@@ -110,6 +98,28 @@ const DIGITAL_IO_t DIGITAL_IO_AuxPowerOn =
     .mode = XMC_GPIO_MODE_OUTPUT_PUSH_PULL,
     .output_level = XMC_GPIO_OUTPUT_LEVEL_LOW,
 
+  },
+  .hwctrl = XMC_GPIO_HWCTRL_DISABLED
+};
+		
+const DIGITAL_IO_t DIGITAL_IO_Button =
+{
+  .gpio_port = XMC_GPIO_PORT4,
+  .gpio_pin = 7U,
+  .gpio_config = {
+    .mode = XMC_GPIO_MODE_INPUT_PULL_UP,
+    .input_hysteresis = XMC_GPIO_INPUT_HYSTERESIS_STANDARD
+  },
+  .hwctrl = XMC_GPIO_HWCTRL_DISABLED
+};
+		
+const DIGITAL_IO_t DIGITAL_IO_ChargerPower =
+{
+  .gpio_port = XMC_GPIO_PORT1,
+  .gpio_pin = 4U,
+  .gpio_config = {
+    .mode = XMC_GPIO_MODE_INPUT_TRISTATE,
+    .input_hysteresis = XMC_GPIO_INPUT_HYSTERESIS_STANDARD
   },
   .hwctrl = XMC_GPIO_HWCTRL_DISABLED
 };
